@@ -55,9 +55,8 @@ def banner(console):
     console.print(colorful_text)
     console.print("[bold][blue]========[/blue][ Author information ][blue]========[/blue][/bold]")
     console.print("[bold green][+] Author    [/bold green]: ClementeXLovers")
-    console.print("[bold green][+] Telegramb [/bold green]: https://t.me/Clementep_ee")
+    console.print("[bold green][+] Telegram  [/bold green]: https://t.me/Clementep_ee")
     console.print("[bold green][+] Youtube   [/bold green]: https://youtube.com/@clementexlovers")
-    console.print(f"[bold green][+]Telegram[/bold green]: [bold blue]@{__CHANNEL_USERNAME__}[/bold blue] or [bold blue]@{__GROUP_USERNAME__}[/bold blue].")
     console.print("[bold blue]==================================================[/bold blue]")
     console.print("[bold yellow]! Note[/bold yellow]: Logout from CPM before using this tool !.", end="\n\n")
 
