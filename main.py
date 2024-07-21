@@ -14,8 +14,8 @@ from rich.text import Text
 from rich.style import Style
 from cpmnuker import CPMNuker
 
-__CHANNEL_USERNAME__ = "CPMNuker"
-__GROUP_USERNAME__   = "CPMNukerChat"
+__CHANNEL_USERNAME__ = "ClementeXLovers"
+__GROUP_USERNAME__   = "ClementeXLovers"
 
 def signal_handler(sig, frame):
     print("\n Bye Bye...")
@@ -53,6 +53,7 @@ def banner(console):
     ]
     colorful_text = gradient_text(brand_name, colors)
     console.print(colorful_text)
+    console.print("[bold red]==================================================[/bold red]")
     console.print("[bold green]♕ CPMNuker[/bold green]: Car Parking Multiplayer Hacking Tool.")
     console.print(f"[bold green]♕ Telegram[/bold green]: [bold blue]@{__CHANNEL_USERNAME__}[/bold blue] or [bold blue]@{__GROUP_USERNAME__}[/bold blue].")
     console.print("[bold red]==================================================[/bold red]")
@@ -112,9 +113,9 @@ if __name__ == "__main__":
     signal.signal(signal.SIGINT, signal_handler)
     while True:
         banner(console)
-        acc_email = prompt_valid_value("[bold][?] Account Email[/bold]", "Email", password=False)
-        acc_password = prompt_valid_value("[bold][?] Account Password[/bold]", "Password", password=False)
-        acc_access_key = prompt_valid_value("[bold][?] Access Key[/bold]", "Access Key", password=False)
+        acc_email = prompt_valid_value("[bold][01] Account Email[/bold]", "Email", password=False)
+        acc_password = prompt_valid_value("[bold][02] Account Password[/bold]", "Password", password=False)
+        acc_access_key = prompt_valid_value("[bold][03] Access Key[/bold]", "Access Key", password=False)
         console.print("[bold cyan][%] Trying to Login[/bold cyan]: ", end=None)
         cpm = CPMNuker(acc_access_key)
         login_response = cpm.login(acc_email, acc_password)
@@ -167,7 +168,7 @@ if __name__ == "__main__":
             console.print("[bold cyan][21]: Change Race Loses ~ 1K[/bold cyan]")
             console.print("[bold cyan][22]: Clone Account ~ 5K[/bold cyan]")
             console.print("[bold cyan][00]: Exit tools[/bold cyan]", end="\n\n")
-            console.print("[bold red]==================================================[/bold red]")
+            
             service = IntPrompt.ask(f"[bold]Input number menu [white][1-{choices[-1]} or 0][/white][/bold]", choices=choices, show_choices=False)
             if service == 0: # Exit
                 console.print(f"[bold yellow][!] Thank You for using our tool, please join our telegram channel[/bold yellow]: [bold blue]@{__CHANNEL_USERNAME__}[/bold blue].")
