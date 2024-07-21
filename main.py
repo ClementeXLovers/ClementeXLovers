@@ -53,10 +53,10 @@ def banner(console):
     ]
     colorful_text = gradient_text(brand_name, colors)
     console.print(colorful_text)
-    console.print("[bold red]==================================================[/bold red]")
+    console.print("[bold][blue]========[/blue][ Author information ][blue]========[/blue][/bold]")
     console.print("[bold green]♕ CPMNuker[/bold green]: Car Parking Multiplayer Hacking Tool.")
     console.print(f"[bold green]♕ Telegram[/bold green]: [bold blue]@{__CHANNEL_USERNAME__}[/bold blue] or [bold blue]@{__GROUP_USERNAME__}[/bold blue].")
-    console.print("[bold red]==================================================[/bold red]")
+    console.print("[bold blue]==================================================[/bold blue]")
     console.print("[bold yellow]! Note[/bold yellow]: Logout from CPM before using this tool !.", end="\n\n")
 
 def load_player_data(cpm):
@@ -64,7 +64,7 @@ def load_player_data(cpm):
     if response.get('ok'):
         data = response.get('data')
         if 'floats' in data and 'localID' in data and 'money' in data and 'coin' in data:
-            console.print("[bold][red]========[/red][ Player Information ][red]========[/red][/bold]")
+            console.print("[bold][blue]========[/blue][ Player Information ][blue]========[/blue][/bold]")
             console.print(f"[bold white]>> Name   [/bold white]: { (data.get('Name') if 'Name' in data else 'UNDEFINED') }.")
             console.print(f"[bold white]>> User ID[/bold white]: { (data.get('localID') if 'localID' in data else 'UNDEFINED') }.")
             console.print(f"[bold white]>> Money  [/bold white]: { (data.get('money') if 'money' in data else 'UNDEFINED') }.")
