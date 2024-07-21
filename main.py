@@ -54,9 +54,9 @@ def banner(console):
     colorful_text = gradient_text(brand_name, colors)
     console.print(colorful_text)
     console.print("[bold][blue]========[/blue][ Author information ][blue]========[/blue][/bold]")
-    console.print("[bold white][+] Author    [/bold green]: ClementeXLovers")
-    console.print("[bold white][+] Telegram  [/bold green]: https://t.me/Clementep_ee")
-    console.print("[bold white][+] Youtube   [/bold green]: https://youtube.com/@clementexlovers")
+    console.print("[bold green][+] Author    [/bold green]: ClementeXLovers")
+    console.print("[bold green][+] Telegram  [/bold green]: https://t.me/Clementep_ee")
+    console.print("[bold green][+] Youtube   [/bold green]: https://youtube.com/@clementexlovers")
     console.print("[bold blue]==================================================[/bold blue]")
     console.print("[bold yellow]! Note[/bold yellow]: Logout from CPM before using this tool !.", end="\n\n")
 
