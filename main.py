@@ -166,8 +166,9 @@ if __name__ == "__main__":
             console.print("[bold cyan][20]: Change Race Wins ~ 1K[/bold cyan]")
             console.print("[bold cyan][21]: Change Race Loses ~ 1K[/bold cyan]")
             console.print("[bold cyan][22]: Clone Account ~ 5K[/bold cyan]")
-            console.print("[bold cyan][00]: Exit[/bold cyan]", end="\n\n")
-            service = IntPrompt.ask(f"[bold][?] Input number menu [white][1-{choices[-1]} or 0][/white][/bold]", choices=choices, show_choices=False)
+            console.print("[bold cyan][00]: Exit tools[/bold cyan]", end="\n\n")
+            console.print("[bold red]==================================================[/bold red]")
+            service = IntPrompt.ask(f"[bold]Input number menu [white][1-{choices[-1]} or 0][/white][/bold]", choices=choices, show_choices=False)
             if service == 0: # Exit
                 console.print(f"[bold yellow][!] Thank You for using our tool, please join our telegram channel[/bold yellow]: [bold blue]@{__CHANNEL_USERNAME__}[/bold blue].")
             elif service == 1: # Increase Money
