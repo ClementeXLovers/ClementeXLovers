@@ -54,9 +54,9 @@ def banner(console):
     colorful_text = gradient_text(brand_name, colors)
     console.print(colorful_text)
     console.print("[bold][blue]========[/blue][ Author information ][blue]========[/blue][/bold]")
-    console.print("[bold green][+] Author    [/bold green]: ClementeXLovers")
-    console.print("[bold green][+] Telegram  [/bold green]: https://t.me/Clementep_ee")
-    console.print("[bold green][+] Youtube   [/bold green]: https://youtube.com/@clementexlovers")
+    console.print("[bold white][+] Author    [/bold green]: ClementeXLovers")
+    console.print("[bold white][+] Telegram  [/bold green]: https://t.me/Clementep_ee")
+    console.print("[bold white][+] Youtube   [/bold green]: https://youtube.com/@clementexlovers")
     console.print("[bold blue]==================================================[/bold blue]")
     console.print("[bold yellow]! Note[/bold yellow]: Logout from CPM before using this tool !.", end="\n\n")
 
@@ -79,7 +79,7 @@ def load_player_data(cpm):
 
 def load_key_data(cpm):
     data = cpm.get_key_data()
-    console.print("[bold][red]========[/red][ ACCESS KEY DETAILS ][red]========[/red][/bold]")
+    console.print("[bold][blue]========[/blue][ ACCESS KEY DETAILS ][blue]========[/blue][/bold]")
     console.print(f"[bold green]Access Key [/bold green]: { data.get('access_key') }.")
     console.print(f"[bold green]Telegram ID[/bold green]: { data.get('telegram_id') }.")
     console.print(f"[bold green]Credits    [/bold green]: { (data.get('coins') if not data.get('is_unlimited') else 'Unlimited') }.", end="\n\n")
